@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <title>FCC : Simple Markdown Previewer</title>
+</head>
+<body>
+    <div class="app">
+        <div class="section section-editor">
+          <div class="section__head">
+            <div>
+              <i class="fa fa-free-code-camp" title="no-stack-dub-sack"></i>
+              Editor
+            </div>
+           
+             <i class="fa fa-arrows-alt expandButton"></i>
+          </div>
+          <textarea id="editor" class="to-maximized"></textarea>
+        </div>
+        
+        <div class="section section-preview">
+          <div class="section__head">
+            <div>
+              <i class="fa fa-free-code-camp" title="no-stack-dub-sack"></i>
+              Previewer
+            </div>
+           
+             <i class="fa fa-arrows-alt expandButton"></i>
+          </div>
+          <div id="preview" class="to-maximized"></div>
+        </div>
+      </div>
+
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.2/marked.min.js"
+        integrity="sha512-hzyXu3u+VDu/7vpPjRKFp9w33Idx7pWWNazPm+aCMRu26yZXFCby1gn1JxevVv3LDwnSbyKrvLo3JNdi4Qx1ww=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+
+      <script src="app.js"></script>
+</body>
+</html>
